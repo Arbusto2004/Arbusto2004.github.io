@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página web</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos2.css">
+</head>
+<header>
+    <div class="botones">
+        <button id="Inicio" class="button">Inicio</button>
+    </div>
+    <script>
+    const faqButton = document.getElementById('Inicio');
+faqButton.addEventListener('click', function() {
+window.location.href = 'https://arbusto2004.github.io/index.html';
+});
+</script>
+</header>
+<body>
+    <div class="column">
+        <form>
+          <label for="name">Nombre y apellido:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="dni">DNI:</label>
+          <input type="number" id="dni" name="dni" required>
+          
+          <label for="age">Edad:</label>
+          <input type="number" id="age" name="age" required>
+          
+          <label for="name">Mina con la que queres estar:</label>
+          <input type="text" id="mina" name="name" required>
+          
+          <label for="chances">¿Vos pensas que tenes chances?</label>
+          <input type="radio" id="yes" name="chances" value="yes">
+          <label for="yes">Sí</label>
+          <input type="radio" id="no" name="chances" value="no">
+          <label for="no">No</label>
+          
+          <input type="submit" value="Solicitar turno">
+        </form>
+
+        <div id="success-message">
+            Turno solicitado con éxito.
+          </div>
+        <script>
+document.getElementById("submit-button").addEventListener("click", function() {
+  document.getElementById("success-message").style.display = "block";})
+            // Selecciona el elemento del mensaje de éxito
+const successMessage = document.getElementById('success-message');
+
+// Muestra el mensaje de éxito
+successMessage.style.display = 'block';
+
+// Espera 10 segundos antes de refrescar la página
+setTimeout(() => {
+  location.reload();
+}, 10000);
+        </script>
+
+
+</body>
