@@ -1,0 +1,96 @@
+body {
+	background-color: #f5f5f5;
+	color: #333333;
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #002147;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones {
+	display: flex;
+	gap: 10px;
+}
+
+button {
+	padding: 10px 20px;
+	border: 2px solid #002147;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #002147;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #033064;
+	color: #FFFFFF;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+}
+.column {
+  width: 50%;
+  padding: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+iframe {
+  margin: auto;
+  display: block;
+}
+Asegúrese de ajustar los valores de ancho y alto del iframe según su formulario de Google.
+
+
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+#success-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 128, 0, 0.8);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20%;
+  }
+  
